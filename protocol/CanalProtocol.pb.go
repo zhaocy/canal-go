@@ -1599,7 +1599,7 @@ func (m *ClientRollback) GetBatchId() int64 {
 
 func init() {
 	proto.RegisterType((*Packet)(nil), "com.alibaba.otter.canal.protocol.Packet")
-	proto.RegisterType((*HeartBeat)(nil), "com.alibaba.otter.canal.protocol.HeartBeat")
+	proto.RegisterType((*BeatHeart)(nil), "com.alibaba.otter.canal.protocol.BeatHeart")
 	proto.RegisterType((*Handshake)(nil), "com.alibaba.otter.canal.protocol.Handshake")
 	proto.RegisterType((*ClientAuth)(nil), "com.alibaba.otter.canal.protocol.ClientAuth")
 	proto.RegisterType((*Ack)(nil), "com.alibaba.otter.canal.protocol.Ack")
