@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/zhaocy/cannal-go/client"
+	"github.com/zhaocy/canal-go/client"
 	protocol "github.com/zhaocy/canal-go/protocol"
 	"github.com/gogo/protobuf/proto"
 	"log"

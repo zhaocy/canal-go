@@ -29,7 +29,7 @@ const (
 	EntryType_ROWDATA                   EntryType = 2
 	EntryType_TRANSACTIONEND            EntryType = 3
 	// * 心跳类型，内部使用，外部暂不可见，可忽略 *
-	EntryType_HEARTBEAT EntryType = 4
+	EntryType_BEATHEART EntryType = 4
 	EntryType_GTIDLOG   EntryType = 5
 )
 
