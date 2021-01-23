@@ -23,7 +23,7 @@ import (
 	"time"
 
 	"github.com/zhaocy/cannal-go/client"
-	protocol "github.com/zhaocy/cannal-go/protocol"
+	protocol "github.com/zhaocy/canal-go/protocol"
 	"github.com/golang/protobuf/proto"
 )
 
