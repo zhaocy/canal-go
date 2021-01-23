@@ -372,7 +372,7 @@ func (m *BeatHeart) XXX_Unmarshal(b []byte) error {
 }
 func (m *BeatHeart) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	if deterministic {
-		return xxx_messageInfo_HeartBeat.Marshal(b, m, deterministic)
+		return xxx_messageInfo_BeatHeart.Marshal(b, m, deterministic)
 	} else {
 		b = b[:cap(b)]
 		n, err := m.MarshalTo(b)
@@ -383,16 +383,16 @@ func (m *BeatHeart) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	}
 }
 func (dst *BeatHeart) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_HeartBeat.Merge(dst, src)
+	xxx_messageInfo_BeatHeart.Merge(dst, src)
 }
 func (m *BeatHeart) XXX_Size() int {
 	return m.Size()
 }
 func (m *BeatHeart) XXX_DiscardUnknown() {
-	xxx_messageInfo_HeartBeat.DiscardUnknown(m)
+	xxx_messageInfo_BeatHeart.DiscardUnknown(m)
 }
 
-var xxx_messageInfo_HeartBeat proto.InternalMessageInfo
+var xxx_messageInfo_BeatHeart proto.InternalMessageInfo
 
 func (m *BeatHeart) GetSendTimestamp() int64 {
 	if m != nil {
