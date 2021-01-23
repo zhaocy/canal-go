@@ -85,7 +85,7 @@ var PacketType_name = map[int32]string{
 	8:  "CLIENTACK",
 	9:  "SHUTDOWN",
 	10: "DUMP",
-	11: "HEARTBEAT",
+	11: "BEATHEART",
 	12: "CLIENTROLLBACK",
 }
 var PacketType_value = map[string]int32{
@@ -100,7 +100,7 @@ var PacketType_value = map[string]int32{
 	"CLIENTACK":                   8,
 	"SHUTDOWN":                    9,
 	"DUMP":                        10,
-	"HEARTBEAT":                   11,
+	"BEATHEART":                   11,
 	"CLIENTROLLBACK":              12,
 }
 

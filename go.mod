@@ -1,4 +1,4 @@
-module github.com/withlin/canal-go
+module github.com/zhaocy/canal-go
 
 require (
 	github.com/gogo/protobuf v1.3.1

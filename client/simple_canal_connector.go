@@ -26,7 +26,7 @@ import (
 	"strconv"
 	"sync"
 
-	pb "github.com/withlin/canal-go/protocol"
+	pb "github.com/zhaocy/cannal-go/protocol"
 
 	"github.com/golang/protobuf/proto"
 )
