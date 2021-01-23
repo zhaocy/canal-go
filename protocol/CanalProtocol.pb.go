@@ -353,7 +353,7 @@ func _Packet_OneofSizer(msg proto.Message) (n int) {
 	return n
 }
 
-type HeartBeat struct {
+type BeatHeart struct {
 	SendTimestamp        int64    `protobuf:"varint,1,opt,name=send_timestamp,json=sendTimestamp,proto3" json:"send_timestamp,omitempty"`
 	StartTimestamp       int64    `protobuf:"varint,2,opt,name=start_timestamp,json=startTimestamp,proto3" json:"start_timestamp,omitempty"`
 	XXX_NoUnkeyedLiteral struct{} `json:"-"`
@@ -361,16 +361,16 @@ type HeartBeat struct {
 	XXX_sizecache        int32    `json:"-"`
 }
 
-func (m *HeartBeat) Reset()         { *m = HeartBeat{} }
-func (m *HeartBeat) String() string { return proto.CompactTextString(m) }
-func (*HeartBeat) ProtoMessage()    {}
-func (*HeartBeat) Descriptor() ([]byte, []int) {
+func (m *BeatHeart) Reset()         { *m = BeatHeart{} }
+func (m *BeatHeart) String() string { return proto.CompactTextString(m) }
+func (*BeatHeart) ProtoMessage()    {}
+func (*BeatHeart) Descriptor() ([]byte, []int) {
 	return fileDescriptor_CanalProtocol_79f46d6f01bc36e7, []int{1}
 }
-func (m *HeartBeat) XXX_Unmarshal(b []byte) error {
+func (m *BeatHeart) XXX_Unmarshal(b []byte) error {
 	return m.Unmarshal(b)
 }
-func (m *HeartBeat) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+func (m *BeatHeart) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	if deterministic {
 		return xxx_messageInfo_HeartBeat.Marshal(b, m, deterministic)
 	} else {
@@ -382,26 +382,26 @@ func (m *HeartBeat) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 		return b[:n], nil
 	}
 }
-func (dst *HeartBeat) XXX_Merge(src proto.Message) {
+func (dst *BeatHeart) XXX_Merge(src proto.Message) {
 	xxx_messageInfo_HeartBeat.Merge(dst, src)
 }
-func (m *HeartBeat) XXX_Size() int {
+func (m *BeatHeart) XXX_Size() int {
 	return m.Size()
 }
-func (m *HeartBeat) XXX_DiscardUnknown() {
+func (m *BeatHeart) XXX_DiscardUnknown() {
 	xxx_messageInfo_HeartBeat.DiscardUnknown(m)
 }
 
 var xxx_messageInfo_HeartBeat proto.InternalMessageInfo
 
-func (m *HeartBeat) GetSendTimestamp() int64 {
+func (m *BeatHeart) GetSendTimestamp() int64 {
 	if m != nil {
 		return m.SendTimestamp
 	}
 	return 0
 }
 
-func (m *HeartBeat) GetStartTimestamp() int64 {
+func (m *BeatHeart) GetStartTimestamp() int64 {
 	if m != nil {
 		return m.StartTimestamp
 	}
@@ -1599,7 +1599,7 @@ func (m *ClientRollback) GetBatchId() int64 {
 
 func init() {
 	proto.RegisterType((*Packet)(nil), "com.alibaba.otter.canal.protocol.Packet")
-	proto.RegisterType((*HeartBeat)(nil), "com.alibaba.otter.canal.protocol.BeatHeart")
+	proto.RegisterType((*BeatHeart)(nil), "com.alibaba.otter.canal.protocol.BeatHeart")
 	proto.RegisterType((*Handshake)(nil), "com.alibaba.otter.canal.protocol.Handshake")
 	proto.RegisterType((*ClientAuth)(nil), "com.alibaba.otter.canal.protocol.ClientAuth")
 	proto.RegisterType((*Ack)(nil), "com.alibaba.otter.canal.protocol.Ack")
@@ -1687,7 +1687,7 @@ func (m *Packet_Compression) MarshalTo(dAtA []byte) (int, error) {
 	i = encodeVarintCanalProtocol(dAtA, i, uint64(m.Compression))
 	return i, nil
 }
-func (m *HeartBeat) Marshal() (dAtA []byte, err error) {
+func (m *BeatHeart) Marshal() (dAtA []byte, err error) {
 	size := m.Size()
 	dAtA = make([]byte, size)
 	n, err := m.MarshalTo(dAtA)
@@ -1697,7 +1697,7 @@ func (m *HeartBeat) Marshal() (dAtA []byte, err error) {
 	return dAtA[:n], nil
 }
 
-func (m *HeartBeat) MarshalTo(dAtA []byte) (int, error) {
+func (m *BeatHeart) MarshalTo(dAtA []byte) (int, error) {
 	var i int
 	_ = i
 	var l int
@@ -2273,7 +2273,7 @@ func (m *Packet_Compression) Size() (n int) {
 	n += 1 + sovCanalProtocol(uint64(m.Compression))
 	return n
 }
-func (m *HeartBeat) Size() (n int) {
+func (m *BeatHeart) Size() (n int) {
 	if m == nil {
 		return 0
 	}
@@ -2789,7 +2789,7 @@ func (m *Packet) Unmarshal(dAtA []byte) error {
 	}
 	return nil
 }
-func (m *HeartBeat) Unmarshal(dAtA []byte) error {
+func (m *BeatHeart) Unmarshal(dAtA []byte) error {
 	l := len(dAtA)
 	iNdEx := 0
 	for iNdEx < l {
@@ -2812,10 +2812,10 @@ func (m *HeartBeat) Unmarshal(dAtA []byte) error {
 		fieldNum := int32(wire >> 3)
 		wireType := int(wire & 0x7)
 		if wireType == 4 {
-			return fmt.Errorf("proto: HeartBeat: wiretype end group for non-group")
+			return fmt.Errorf("proto: BeatHeart: wiretype end group for non-group")
 		}
 		if fieldNum <= 0 {
-			return fmt.Errorf("proto: HeartBeat: illegal tag %d (wire type %d)", fieldNum, wire)
+			return fmt.Errorf("proto: BeatHeart: illegal tag %d (wire type %d)", fieldNum, wire)
 		}
 		switch fieldNum {
 		case 1:
