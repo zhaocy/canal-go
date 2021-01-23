@@ -69,7 +69,7 @@ const (
 	PacketType_SHUTDOWN PacketType = 9
 	// integration
 	PacketType_DUMP           PacketType = 10
-	PacketType_HEARTBEAT      PacketType = 11
+	PacketType_TBEATHEAR      PacketType = 11
 	PacketType_CLIENTROLLBACK PacketType = 12
 )
 
